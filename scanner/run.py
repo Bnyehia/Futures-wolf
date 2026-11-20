@@ -6,7 +6,7 @@ import httpx
 import numpy as np
 import pandas as pd
 
-BASE = 'https://fapi.binance.com'
+BASE = 'https://fapi1.binance.com'
 OUTPUT = Path(__file__).resolve().parents[1] / 'site' / 'data' / 'latest.json'
 MIN_VOLUME = float(os.getenv('MIN_QUOTE_VOLUME', '10000000'))
 CONCURRENCY = int(os.getenv('CONCURRENCY', '4'))
